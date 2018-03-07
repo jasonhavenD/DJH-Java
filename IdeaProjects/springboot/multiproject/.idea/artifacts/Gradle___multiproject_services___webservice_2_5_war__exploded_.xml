@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : multiproject.services : webservice-2.5.war (exploded)">
+    <output-path>$PROJECT_DIR$/services/webservice/build/libs/exploded/webservice-2.5.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/services/webservice/build/libs/exploded/webservice-2.5.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="webservice_main/web/Web Gradle : webservice-2.5.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webservice_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/services/webservice/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="multiproject-api-1.0.jar">
+            <element id="module-output" name="api_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/api/out/production/resources" />
+          </element>
+          <element id="archive" name="multiproject-multiproject-shared-1.0.jar">
+            <element id="module-output" name="multiproject-shared_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/shared/out/production/resources" />
+          </element>
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.2/ad6ae511ca4608a18317fcb19850fd113bb2ae8/commons-io-1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/16313e02a793435009f1e458fa4af5d879f6fb11/commons-lang-2.4.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

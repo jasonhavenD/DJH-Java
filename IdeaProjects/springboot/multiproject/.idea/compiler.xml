@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="api_main" target="1.8" />
+      <module name="api_test" target="1.8" />
+      <module name="buildSrc_main" target="1.8" />
+      <module name="buildSrc_test" target="1.8" />
+      <module name="multiproject-shared_main" target="1.8" />
+      <module name="multiproject-shared_test" target="1.8" />
+      <module name="services-shared_main" target="1.8" />
+      <module name="services-shared_test" target="1.8" />
+      <module name="services_main" target="1.8" />
+      <module name="services_test" target="1.8" />
+      <module name="webservice_main" target="1.8" />
+      <module name="webservice_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

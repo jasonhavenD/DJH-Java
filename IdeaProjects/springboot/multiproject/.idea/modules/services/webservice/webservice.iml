@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":services:webservice" external.linked.project.path="$MODULE_DIR$/../../../../services/webservice" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="multiproject.services" external.system.module.version="2.5" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../services/webservice">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../services/webservice/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../services/webservice/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../services/webservice/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

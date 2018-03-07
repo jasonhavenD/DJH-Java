@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : multiproject.services : webservice-2.5.war">
+    <output-path>$PROJECT_DIR$/services/webservice/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="webservice-2.5.war">
+      <element id="artifact" artifact-name="Gradle : multiproject.services : webservice-2.5.war (exploded)" />
+    </root>
+  </artifact>
+</component>

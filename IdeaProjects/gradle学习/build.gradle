@@ -1,0 +1,103 @@
+/*任务基本定义*/
+task hello {
+    doLast {
+        println 'Hello world!'
+    }
+}
+
+/*任务快速定义*/
+/*其中 << 操作符 是 doLast 的简写方式*/
+task hello2<<{
+	println 'Hello world! 2'
+}
+task upper << {
+    String someString = 'mY_nAmE'
+    println "Original: " + someString
+    println "Upper case: " + someString.toUpperCase()
+}
+
+task count << {
+	4.times{ print "$it " }
+}
+
+/*任务依赖*/
+task intro(dependsOn: hello) << {
+    println "I'm Gradle"
+}
+
+/*延迟依赖*/
+task taskX(dependsOn: 'taskY') << {
+    println 'taskX'
+}
+task taskY << {
+    println 'taskY'
+}
+
+/*动态任务*/
+
+4.times { counter ->
+    task "task$counter" << {
+        println "I'm task number $counter"
+    }
+}
+/*任务操纵*/
+task0.dependsOn task2, task3
+
+
+/*任务通信*/
+task earth << {
+    println 'Hello Earth'
+}
+earth.doFirst {
+    println 'Hello Venus'
+}
+earth.doLast {
+    println 'Hello Mars'
+}
+earth << {
+    println 'Hello Jupiter'
+}
+
+/*短标记法*/
+/*1.以属性的方式访问任务*/
+task hello3 << {
+    println 'Hello world!'
+}
+hello3.doLast {
+    println "Greetings from the $hello3.name task."
+}
+
+/*增加自定义属性*/
+task myTask {
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties << {
+    println myTask.myProperty
+}
+
+
+task loadfile << {
+    def files = file('../antLoadfileResources').listFiles().sort()
+    files.each { File file ->
+        if (file.isFile()) {
+            ant.loadfile(srcFile: file, property: file.name)
+            println " *** $file.name ***"
+            println "${ant.properties[file.name]}"
+        }
+    }
+}
+/*方法抽取*/
+
+/*默认任务*/
+defaultTasks 'clean', 'run'
+
+task clean << {
+    println 'Default Cleaning!'
+}
+task run << {
+    println 'Default Running!'
+}
+task other << {
+    println "I'm not a default task!"
+}

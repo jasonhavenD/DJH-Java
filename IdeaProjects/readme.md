@@ -2,6 +2,7 @@
 ---
 ###### learning path
 [springboot](http://projects.spring.io/spring-boot/)
+[groovy](https://www.w3cschool.cn/groovy/)
 [gradle w3c](https://www.w3cschool.cn/gradle/)
 [maven](https://maven.apache.org/)
 [maven repository](http://mvnrepository.com/tags/maven)

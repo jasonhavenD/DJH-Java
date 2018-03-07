@@ -1,0 +1,39 @@
+//采用 Java 插件
+apply plugin: 'java'
+apply plugin: 'idea'
+
+//自定义 MANIFEST.MF
+sourceCompatibility = 1.8
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+
+repositories {
+    //添加 Maven 仓库
+    mavenCentral()
+}
+
+dependencies {
+    //添加依赖,编译期所需依赖 commons-collections 和测试期所需依赖 junit
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+//为 test 添加系统属性
+test {
+    systemProperties 'property': 'value'
+}
+
+//发布 jar 包
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":api:main" external.linked.project.path="$MODULE_DIR$/../../../api" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="multiproject" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../api/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../api/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../api/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../api/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="multiproject-shared_main" />
+    <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:1.2" level="project" />
+  </component>
+</module>

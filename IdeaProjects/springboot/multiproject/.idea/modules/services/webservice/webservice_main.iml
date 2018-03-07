@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":services:webservice:main" external.linked.project.path="$MODULE_DIR$/../../../../services/webservice" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="multiproject.services" external.system.module.type="sourceSet" external.system.module.version="2.5" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web Gradle : webservice-2.5.war">
+      <configuration>
+        <webroots>
+          <root url="file://D:\github\DJH-Java\IdeaProjects\springboot\multiproject\services\webservice\src\main\webapp" relative="/" />
+        </webroots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../../services/webservice/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../services/webservice/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../services/webservice/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../services/webservice/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="api_main" />
+    <orderEntry type="module" module-name="multiproject-shared_main" />
+    <orderEntry type="library" name="Gradle: commons-collections:commons-collections:3.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:1.2" level="project" />
+    <orderEntry type="module" module-name="api_main" scope="RUNTIME" />
+    <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.4" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../api/build/libs/api-spi-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
