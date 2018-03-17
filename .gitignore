@@ -48,7 +48,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-
 # Compiled class file
 *.class
 
