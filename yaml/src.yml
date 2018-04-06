@@ -1,0 +1,91 @@
+animal: perts
+
+hash: { name: Steve, foo: bar } 
+
+t:
+- Cat
+- Dog
+- Goldfish
+
+tt:
+-
+ - Cat
+ - Dog
+ - Goldfish
+ 
+languages:
+- Ruby
+- Perl
+- Python 
+
+websites:
+YAML: yaml.org 
+Ruby: ruby-lang.org 
+Python: python.org 
+Perl: use.perl.org 
+
+number: 12.30
+isSet: true
+parent: ~
+
+iso8601: 2001-12-14t21:59:43.10-05:00 
+
+date: 1976-07-31
+
+e: !!str 123
+f: !!str true
+
+str: 这是一行字符串
+
+
+str2: '内容：  字符串'
+
+s1: '内容\n字符串'
+s2: "内容\n字符串"
+
+
+str3: 'labor''s day'
+
+
+str4: 这是一段
+      多行
+      字符串
+  
+
+this: |
+  Foo
+  Bar
+that: >
+  Foo
+  Bar
+
+ss1: |
+  Foo
+
+ss2: |+
+  Foo
+
+
+ss3: |-
+  Foo
+  
+  
+  
+  
+message: |
+    段落
+
+defaults: &defaults
+  adapter:  postgres
+  host:     localhost
+development:
+  database: myapp_development
+  <<: *defaults
+test:
+  database: myapp_test
+  <<: *defaults
+  
+ 
+# example.yml
+fn: function () { return 1 }
+reg: /test/
